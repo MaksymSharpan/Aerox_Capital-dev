@@ -1,0 +1,23 @@
+// Container & Breakpoints
+@use 'sass:math';
+$containerWidth: 1080;
+$containerPadding: 40;
+$containerSidePadding: math.div($containerPadding, 2);
+
+$breakpoint1500: 1499.98 + px;
+$breakpoint1400: 1339.98 + px;
+$breakpoint1200: 1199.98 + px;
+
+$breakpoint992: 991.98 + px;
+$breakpoint880: 879.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint480: 479.98 + px;
+$breakpoint415: 414.98 + px;
+
+// Burger Menu
+$burgerBreakpoint: $breakpoint992;
+$burgerActiveColor: #2f4de2;
+
+// Fonts
+$fontMain: 'IBM Plex Sans', sans-serif;
+$fontSecondary: 'BrutalType', sans-serif;

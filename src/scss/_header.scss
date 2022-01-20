@@ -1,0 +1,440 @@
+// Header
+// Header
+
+// Navbar
+nav {
+  // overflow: hidden;
+}
+
+.navbar {
+  @media (max-width: $breakpoint992) {
+    justify-content: space-between;
+  }
+  display: flex;
+  width: 100%;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+  align-items: center;
+}
+
+.logo {
+  z-index: 99;
+  a {
+    color: white;
+  }
+}
+
+.menu {
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+  // .menu__item
+  &__item {
+    @media (max-width: $breakpoint992) {
+      margin-left: 50px;
+    }
+    margin-left: 60px;
+    &:nth-child(4) {
+      margin-left: 50px;
+      @media (max-width: $breakpoint992) {
+        margin-left: 0;
+      }
+    }
+    @media (max-width: $breakpoint992) {
+      margin-left: 0;
+      &:nth-child(1) {
+        order: 2;
+      }
+      &:nth-child(2) {
+        order: 2;
+      }
+      &:nth-child(3) {
+        order: 4;
+      }
+      &:nth-child(4) {
+        order: 1;
+      }
+    }
+    &.menu__item-buttons {
+      @media (max-width: $breakpoint992) {
+        display: flex;
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+      }
+      @media (max-width: $breakpoint480) {
+        flex-direction: column;
+      }
+    }
+    &.with__submenu {
+      position: relative;
+      a {
+        img {
+          // fill: #2f4de2;
+          margin-left: 6px;
+          // &:hover,
+          // :focus {
+          //   fill: #2f4de2;
+          // }
+        }
+        display: flex;
+        align-items: center;
+      }
+      .submenu {
+        display: none;
+        z-index: 99;
+        &.active {
+          display: block;
+        }
+
+        @media (max-width: $breakpoint992) {
+          display: block;
+          position: static;
+          border: none;
+          background: none;
+          padding: 0;
+        }
+        &::after {
+          position: absolute;
+          content: '';
+          left: 0;
+          right: 0;
+          top: -15px;
+          height: 20px;
+        }
+        position: absolute;
+        top: 30px;
+        left: -20px;
+        right: -20px;
+
+        background: #fbfbfb;
+        border: 1px solid #f2f2f2;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 16px 20px;
+
+        &__item {
+          @media (max-width: $breakpoint992) {
+            margin-top: 18px;
+            a {
+              display: flex;
+              justify-content: center;
+            }
+          }
+          &:not(:last-child) {
+            @media (max-width: $breakpoint992) {
+              margin-bottom: 0;
+            }
+            margin-bottom: 16px;
+          }
+          &-link {
+            @media (max-width: $breakpoint992) {
+              color: #fff;
+              font-weight: 500;
+              font-family: $fontSecondary;
+              font-weight: normal;
+              font-size: 23px;
+              line-height: 109%;
+            }
+
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: #1e162d;
+            @media (min-width: $breakpoint992) {
+              &:hover,
+              :focus {
+                color: #2f4de2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // .menu__item-link
+  &__item-link {
+    @media (max-width: $breakpoint992) {
+      font-size: 23px;
+      img {
+        display: none;
+      }
+    }
+
+    font-family: $fontMain;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #252241;
+    @media (min-width: $breakpoint992) {
+      &:hover,
+      :focus {
+        color: #2f4de2;
+      }
+    }
+  }
+  .btn__login {
+    @media (max-width: $breakpoint992) {
+      font-family: $fontSecondary;
+      font-weight: normal;
+      font-size: 23px;
+
+      display: flex;
+      justify-content: center;
+      flex: 0 0 48%;
+      align-items: center;
+      text-align: center;
+      border-radius: 12px;
+      // font-family: "BrutalType";
+      // font-weight: normal;
+    }
+    color: #2f4de2;
+    background-color: #efefef;
+    @media (min-width: $breakpoint992) {
+      &:hover,
+      :focus {
+        background-color: #2f4de2;
+        color: #efefef;
+      }
+    }
+  }
+  .btn__reg {
+    @media (max-width: $breakpoint992) {
+      margin-left: 10px;
+    }
+    @media (max-width: $breakpoint480) {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    margin-left: 15px;
+
+    @media (max-width: $breakpoint992) {
+      font-family: $fontSecondary;
+      font-weight: normal;
+      font-size: 23px;
+
+      display: flex;
+      flex: 0 0 48%;
+      border: 4px solid #ffffff;
+      backdrop-filter: blur(100px);
+      border-radius: 12px;
+      justify-content: center;
+    }
+    @media (min-width: $breakpoint992) {
+      &:hover,
+      :focus {
+        background-color: #1c3bd6;
+        color: #fff;
+      }
+    }
+    color: #fff;
+  }
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+// Burger menu styles
+@media screen and (max-width: $breakpoint992) {
+  // .menu
+  .menu {
+    position: fixed;
+    background: #2f4de2;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+
+    &.active {
+      display: flex;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      pointer-events: all;
+      justify-content: center;
+      align-items: center;
+      z-index: 22;
+      animation: fade 0.1s linear;
+    }
+  }
+
+  // .burger
+  .burger {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 30px;
+    z-index: 102;
+    cursor: pointer;
+
+    &.active-burger {
+      &:before {
+        background: #fff;
+        transform: rotate(45deg);
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+        top: 8px;
+      }
+
+      &:after {
+        background: #fff;
+        transform: rotate(-45deg);
+        bottom: 10px;
+        transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+      }
+
+      & span {
+        transform: scale(0);
+      }
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: #2f4de2;
+      transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    span {
+      position: absolute;
+      top: 9px;
+      right: 0;
+      width: 100%;
+      background: #2f4de2;
+      height: 2px;
+      transform: scale(1);
+      transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    }
+  }
+
+  // .menu__item
+  .menu__item {
+    margin-top: 18px;
+  }
+
+  // .menu__link
+  .menu__item-link {
+    color: white;
+    @media (max-width: $breakpoint992) {
+      font-family: $fontSecondary;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 109%;
+    }
+  }
+}
+
+//select
+
+.select {
+  width: 60px;
+  position: relative;
+  z-index: 10;
+  @media (max-width: $breakpoint992) {
+    display: none;
+  }
+  &__backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: -1;
+    display: none;
+  }
+
+  &.open {
+    .select__dropdown {
+      display: block;
+      z-index: 999;
+    }
+
+    .select__input {
+      border-bottom: none;
+    }
+
+    .select__backdrop {
+      display: block;
+    }
+  }
+
+  &__input {
+    height: 18px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+    .select__arrow {
+      pointer-events: none;
+
+      &.open {
+        transform: rotate(180deg);
+      }
+
+      width: 15px;
+    }
+
+    span {
+      pointer-events: none;
+    }
+  }
+
+  &__dropdown {
+    display: none;
+    position: absolute;
+    // border: 1px solid #ccc;
+    box-shadow: 0px 2px 32px rgba(47, 77, 226, 0.15),
+      0px 1px 6px rgba(47, 77, 226, 0.09);
+    border-radius: 5px;
+    top: 18px;
+    left: 0;
+    right: 0;
+
+    overflow-y: auto;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+
+    .select__list {
+      .select__item {
+        background-color: #efefef;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+
+        &.selected {
+          color: #fff;
+          background-color: #2f4de2;
+        }
+
+        &:hover {
+          background-color: #2f4de2;
+          color: #fff;
+          transition: 0.15 background-color ease-in;
+        }
+      }
+    }
+  }
+}

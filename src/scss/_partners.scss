@@ -1,0 +1,25 @@
+.section__partners {
+  margin-top: 112px;
+
+  background-color: #2f4de2;
+  padding: 70px 0px;
+  @media (max-width: $breakpoint992) {
+    padding: 65px 0px;
+    margin-top: 60px;
+  }
+  @media (max-width: $breakpoint480) {
+    margin-top: 40px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      opacity: 0.5;
+    }
+  }
+}
+.swiper__wrapper-partners {
+  transition-timing-function: linear;
+}

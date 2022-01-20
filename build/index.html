@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aerox</title>
+    <link rel="shortcut icon" href="./img/coin.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body class="main__body">
+    <!-- Header -->
+    <header id="header">
+  <nav>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#"> <img src="./img/logo.svg" alt="logo" /> </a>
+        </div>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#" class="menu__item-link" data-scroll>Партнеры</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__item-link" data-scroll>О нас</a>
+          </li>
+          <li class="menu__item with__submenu">
+            <a href="#" class="menu__item-link" data-scroll
+              >Компания<img src="./img/down-arr.svg" alt="down-arrow" />
+            </a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a href="#" class="submenu__item-link">Aerox Coin</a>
+              </li>
+              <li class="submenu__item">
+                <a href="#" class="submenu__item-link">Нoвости</a>
+              </li>
+              <li class="submenu__item">
+                <a href="#" class="submenu__item-link">Офер</a>
+              </li>
+              <li class="submenu__item">
+                <a href="#" class="submenu__item-link">FAQ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item-buttons">
+            <a href="#" class="menu__item-link btn btn__login" data-scroll
+              >Войти</a
+            ><a href="#" class="menu__item-link btn btn__reg" data-scroll
+              >Регистрация</a
+            >
+          </li>
+        </ul>
+        <!-- Select -->
+        <div id="select">
+          <input type="hidden" class="hidden__input" />
+        </div>
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+    <!-- Main Page -->
+    <main>
+      <!-- hero -->
+      <section class="section__hero">
+  <img
+    data-aos="fade-left"
+    data-aos-duration="1500"
+    class="hero__img"
+    src="./img/Device.png"
+    alt="hero-image" />
+  <div class="container">
+    <div class="hero">
+      <div class="hero__item">
+        <h1 class="hero__title">
+          Откройте Свой Счет в
+          <span class="hero__title__blue">Aerox Capital</span
+          ><img
+            class="hero__icon-bank"
+            src="./img/bank-icon.svg"
+            alt="icon-bank" />
+        </h1>
+        <p class="hero__title__text">
+          Новый и надежный способ управления вашими финансами.
+        </p>
+        <button class="hero__btn btn">
+          Попробовать<img
+            class="hero__btn__img"
+            src="./img/right-1.svg"
+            alt="hero-btn-arrow" />
+        </button>
+      </div>
+
+      <div class="hero__support">
+        <div class="hero__support-content">
+          <p class="hero__support-text">Поддержка</p>
+          <p class="hero__support-time">24/7</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- about-as -->
+      <section class="section__about-as">
+  <div class="container">
+    <div class="about-as__presentationLink-content up">
+      <a class="about-as__presentationLink">
+        <img
+          class="about-as__downloadImg"
+          src="./img/download.svg"
+          alt="download-image"
+          width="24px" />
+        Презентация</a
+      >
+    </div>
+    <div class="about-as">
+      <div class="about-as__item">
+        <img
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          class="about-as__image"
+          src="./img/about-as.png"
+          alt="about-as-image"
+          width="396px" />
+      </div>
+
+      <div class="about-as__item">
+        <div class="about-as__titlelink">
+          <h2 class="about-as__title">О нас</h2>
+          <a class="about-as__link" href=""
+            ><img
+              class="about-as__readLink"
+              src="./img/link-icon.svg"
+              alt="read-image" />
+            Читать</a
+          >
+        </div>
+        <p class="about-as__text">
+          Aerox Capital - это экосистема инвестиционных продуктов и услуг,
+          компания объединяет средства физических и юридических лиц, приобретает
+          криптоактивы и финансирует блокчейн-проекты. Aerox Capital под
+          европейской лицензией, зарегистрирована в Эстонии, имеет
+          представителей в Казахстане, России, Украине, Беларуси, Турции,
+          Израиле и Кыргызстане.
+        </p>
+        <div class="about-as__buttons">
+          <button class="btn about-as__btn">
+            <img
+              class="about-as__btn-icon"
+              src="./img/people.svg"
+              alt="people-img" />
+            более 1000 партнеров
+          </button>
+          <button class="btn about-as__btn">
+            <img
+              class="about-as__btn-icon"
+              src="./img/activity.svg"
+              alt="activity-img" />
+            Обучение трейдингу
+          </button>
+        </div>
+        <div class="about-as__presentationLink-content down">
+          <a class="about-as__presentationLink"
+            ><img
+              class="about-as__downloadImg"
+              src="./img/download.svg"
+              alt="download-image"
+              width="24px" />
+            Презентация</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- benefits -->
+      <section class="section__benefits">
+  <div class="container">
+    <h2 class="benefits__title">Преимущества</h2>
+    <p class="benefits__text">
+      Несколько причин, почему клиенты выбирают нашу платформу.
+    </p>
+    <ul class="benefits__list">
+      <li class="benefits__item">
+        <div class="benefits__item-hover">
+          <h4>Увеличение aктивов</h4>
+          <p>
+            Фонд Aerox Capital насчитывает больше 40 проектов, поэтому вы сами
+            формируете инвестиционный портфель, выбирая продукты и проекты,
+            наиболее соответствующие вашим целям.
+          </p>
+        </div>
+        <div class="benefits__item-content">
+          <h3 class="benefits__item-title"><span>Увеличение</span> активов</h3>
+          <a href=""
+            ><img
+              class="benefits__item-arrow"
+              src="./img/arrow-benefits.svg"
+              alt="arrow-icon"
+          /></a>
+        </div>
+        <img
+          src="./img/benefits-active.svg"
+          alt="active-icon"
+          class="benefits__item-img" />
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__item-hover">
+          <h4>Безопасные сделки</h4>
+          <p>
+            Все сделки защищены авторским API с международной финансовой
+            лицензией. Это гаратрирует защиту активов наших инвесторов. И
+            позволяет вести финансовую деятельность по всему миру.
+          </p>
+        </div>
+        <div class="benefits__item-content">
+          <h3 class="benefits__item-title"><span>Безопасные</span> сделки</h3>
+          <a href=""
+            ><img
+              class="benefits__item-arrow"
+              src="./img/arrow-benefits.svg"
+              alt="arrow-icon"
+          /></a>
+        </div>
+        <img
+          src="./img/benefits-deal.svg"
+          alt="deal-icon"
+          class="benefits__item-img" />
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__item-hover">
+          <h4>Контроль фондов</h4>
+          <p>
+            Управляющие фодном Aerox Capital имеют многолетний опыт работы и
+            используют авторскую методику положительной торговли. Компания
+            заключает договора с проверенными инвесторами и партнерами.
+          </p>
+        </div>
+        <div class="benefits__item-content">
+          <h3 class="benefits__item-title"><span>Контроль</span> фондов</h3>
+          <a href=""
+            ><img
+              class="benefits__item-arrow"
+              src="./img/arrow-benefits.svg"
+              alt="arrow-icon"
+          /></a>
+        </div>
+        <img
+          src="./img/benefits-fond.svg"
+          alt="fond-icon"
+          class="benefits__item-img" />
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__item-hover">
+          <h4>Современная торговля</h4>
+          <p>
+            Мобильное приложение Aerox Capital всегда в вашем смартфоне.
+            Пополнение счетов, обмен без комиссии, перевод средств другому
+            пользователю, начисление % на остаток по счету.
+          </p>
+        </div>
+        <div class="benefits__item-content">
+          <h3 class="benefits__item-title">
+            <span>Современная</span> торговля
+          </h3>
+          <a href=""
+            ><img
+              class="benefits__item-arrow"
+              src="./img/arrow-benefits.svg"
+              alt="arrow-icon"
+          /></a>
+        </div>
+        <img
+          src="./img/benefits-trade.svg"
+          alt="trade-icon"
+          class="benefits__item-img" />
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <!-- founder -->
+      <section class="section__founder">
+  <div class="container">
+    <h2 class="founder__title">Elon Mask</h2>
+    <p class="founder__text">Основатель <span>Aerox Capital</span></p>
+    <div class="founder">
+      <img
+        class="founder__background"
+        src="./img/video1.jpg"
+        alt="preview-img" />
+      <div class="founder__player modal__btn">
+        <svg
+          width="26"
+          height="26"
+          viewBox="0 0 26 26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_1384_1322)">
+            <path
+              d="M6.05554 0.891832C3.7716 -0.41827 1.91992 0.654982 1.91992 3.28709V22.7109C1.91992 25.3456 3.7716 26.4175 6.05554 25.1086L23.0329 15.3722C25.3176 14.0617 25.3176 11.9383 23.0329 10.6281L6.05554 0.891832Z"
+              fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_1384_1322">
+              <rect
+                width="25.3333"
+                height="25.3333"
+                fill="white"
+                transform="translate(0.666992 0.333252)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <p class="founder__text-down">
+      В <span>2006 году </span>основал фонд <span>Aerox Capital</span>, с целью
+      сохранения капитала. На сегодняшний день Aerox Capital является целостной
+      экосистемой инвестиционных инструментов, в которой
+      <span>40 действующих бизнес-проектов</span>.
+    </p>
+  </div>
+</section>
+<!-- Modal -->
+<div class="modal__wrapper">
+  <div class="modal">
+    <div class="modal__close">
+      <?xml version="1.0" encoding="iso-8859-1"?>
+      <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 492 492"
+        style="enable-background: new 0 0 492 492"
+        xml:space="preserve">
+        <g>
+          <g>
+            <path
+              d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z" />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="modal__body">
+      <iframe
+        class="founder__iframe"
+        width="560"
+        height="315"
+        src=""
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+      <!-- mission -->
+      <section class="section__mission">
+  <div class="container">
+    <h2 class="mission__title">
+      <span>"</span>Наша миссия заключается в&nbspсоздании сообщества
+      инвесторов<span>"</span>
+    </h2>
+    <ul class="mission__list">
+      <li class="mission__list-item">
+        <img src="./img/bank.svg" alt="banc-icon" />
+        <h3>Капитал</h3>
+        <p>Общая сумма активов: более $100 000 000.</p>
+      </li>
+      <li class="mission__list-item">
+        <img src="./img/lightning.svg" alt="lightning-icon" />
+        <h3>Инвесторы</h3>
+        <p>Число инвесторов превысило 100 000 человек.</p>
+      </li>
+      <li class="mission__list-item">
+        <img src="./img/link.svg" alt="link-icon" />
+        <h3>Команда</h3>
+        <p>Более 100 сотрудников по всему миру.</p>
+      </li>
+      <li class="mission__list-item">
+        <img src="./img/shield.svg" alt="shield-icon" />
+        <h3>Безопасность</h3>
+        <p>Наша компания имеет европейскую лицензнию.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <!-- documentation -->
+      <section class="section__documentation">
+  <div class="container">
+    <div class="documentation__content">
+      <h2 class="documentation__title">Документация</h2>
+      <div class="documentation__buttons">
+        <button class="doc__btn-prev">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M32.917 19.5431H7.91699"
+              stroke="#2F4DE2"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M22.834 9.50232L32.9173 19.5423L22.834 29.584"
+              stroke="#2F4DE2"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+
+          <!-- <img src="./img/prev-btn.svg" alt="prev-icon" /> -->
+        </button>
+
+        <button class="doc__btn-next">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M32.917 19.5431H7.91699"
+              stroke="#2F4DE2"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M22.834 9.50232L32.9173 19.5423L22.834 29.584"
+              stroke="#2F4DE2"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+
+          <!-- <img src="./img/next-btn.svg" alt="next-icon" /> -->
+        </button>
+      </div>
+    </div>
+    <div class="swiper__documentation">
+      <div class="swiper-wrapper swiper__documentation-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide swiper__documentation-slide">
+          <a href="" class="documentation__item"
+            ><img
+              class="documentation__item-icon"
+              src="./img/06.svg"
+              alt="icon" />
+            <h3>Публичная оферта <img src="./img/right-3.svg" alt="icon" /></h3>
+            <p>
+              Наша публичная оферта содержит всю информацию о нашей компании.
+            </p></a
+          >
+        </div>
+        <div class="swiper-slide swiper__documentation-slide">
+          <a href="" class="documentation__item"
+            ><img
+              class="documentation__item-icon"
+              src="./img/05.svg"
+              alt="icon" />
+            <h3>
+              Пол. конфиденциальности
+              <img src="./img/right-3.svg" alt="icon" />
+            </h3>
+            <p>Юридическая информация о нашей компании в одном документе.</p></a
+          >
+        </div>
+        <div class="swiper-slide swiper__documentation-slide">
+          <a href="" class="documentation__item"
+            ><img
+              class="documentation__item-icon"
+              src="./img/04.svg"
+              alt="icon" />
+            <h3>Cookies <img src="./img/right-3.svg" alt="icon" /></h3>
+            <p>Информация о Cookies, которые мы используем на платформе.</p></a
+          >
+        </div>
+        <div class="swiper-slide swiper__documentation-slide">
+          <a href="" class="documentation__item"
+            ><img
+              class="documentation__item-icon"
+              src="./img/03.svg"
+              alt="icon" />
+            <h3>
+              Регламенты компании <img src="./img/right-3.svg" alt="icon" />
+            </h3>
+            <p>
+              Наша публичная оферта содержит всю информацию о деятельности.
+            </p></a
+          >
+        </div>
+        <div class="swiper-slide swiper__documentation-slide">
+          <a href="" class="documentation__item"
+            ><img
+              class="documentation__item-icon"
+              src="./img/02.svg"
+              alt="icon" />
+            <h3>
+              Распределение активов <img src="./img/right-3.svg" alt="icon" />
+            </h3>
+            <p>
+              Информация об особенностях внутреннего распорядка компании.
+            </p></a
+          >
+        </div>
+        <div class="swiper-slide swiper__documentation-slide">
+          <a href="" class="documentation__item"
+            ><img
+              class="documentation__item-icon"
+              src="./img/01.svg"
+              alt="icon" />
+            <h3>Верификация <img src="./img/right-3.svg" alt="icon" /></h3>
+            <p>Инструкции о том, как пройти проверку для регистрации.</p></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- application -->
+      <section class="section__application">
+  <div class="container">
+    <div class="application__wrapper">
+      <div class="application__content">
+        <div class="application__links">
+          <a href="" class="application__link"
+            ><img src="./img/appstore.svg" alt="appstore-icon" />
+          </a>
+          <a href="" class="application__link"
+            ><img src="./img/google.svg" alt="google-icon" />
+          </a>
+        </div>
+        <h2 class="application__title">
+          Скоро наше приложение на вашем смартфоне
+        </h2>
+      </div>
+      <img
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="1500"
+        class="image-iphone"
+        src="./img/iphone.png"
+        alt="image-iphone" />
+    </div>
+  </div>
+</section>
+
+      <!-- partners -->
+      <section class="section__partners">
+  <!-- Slider main container -->
+  <div class="swiper swiper__partners">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper swiper__wrapper-partners">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="./img/binance.svg" alt="binance-img" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/coinbase.svg" alt="coinbase-img" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/huobi.svg" alt="huobi-img" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/yobit.svg" alt="yobit-img" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/ftx.svg" alt="ftx.svg" />
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="section__footer">
+  <div class="container">
+    <div class="footer">
+      <div class="footer__item">
+        <a href="#header" data-scroll class="footer__item-icon"
+          ><img src="./img/logo2.svg" alt="logo-icon"
+        /></a>
+        <div class="footer__links-up">
+          <p class="footer__item-text">Скоро на всех платформах</p>
+          <div class="footer__item-links">
+            <a href=""
+              ><img src="./img/appstore-footer.svg" alt="appstore-icon" /> </a
+            ><a href=""
+              ><img src="./img/google-footer.svg" alt="google-icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__item">
+        <ul class="footer__list">
+          <li class="footer__list-item first">Компания</li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link" href="">FAQ</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link" href="">Privacy policy</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link" href="">Лента новостей</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link" href="">Вакансии</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item first">Продукт</li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link" href="">Партнерская система</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link" href="">Информация</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link" href="">Алингеры форм</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link" href="">Параметры</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item first">Ресурсы</li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link" href="">Поддержка</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--link" href="">Стоимость</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-item--mail" href="mailto:info@aerox.capital"
+              >info@aerox.capital</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__links-down">
+      <p class="footer__item-text">Скоро на всех платформах</p>
+      <div class="footer__item-links">
+        <a href=""
+          ><img src="./img/appstore-footer.svg" alt="appstore-icon" /> </a
+        ><a href=""><img src="./img/google-footer.svg" alt="google-icon" /></a>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <p class="copyright__text">
+        <span>Aerox Capital&reg;</span> зарегестрированный товарный знак. 2021
+      </p>
+      <ul class="copyright__links">
+        <li class="copyright__list-item">
+          <a href=""><img src="./img/youtube.svg" alt="youtube-icon" /></a>
+        </li>
+        <li class="copyright__list-item">
+          <a href=""><img src="./img/telegram.svg" alt="telegram-icon" /></a>
+        </li>
+        <li class="copyright__list-item">
+          <a href=""><img src="./img/facebook.svg" alt="facebook-icon" /></a>
+        </li>
+        <li class="copyright__list-item">
+          <a href=""><img src="./img/instagram.svg" alt="instagram-icon" /></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div class="coding__by">
+      <p>coding by Maksym Sharpan</p>
+    </div>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./js/scripts.min.js"></script>
+</html>

@@ -1,0 +1,122 @@
+.section__founder {
+  padding: 50px 0px 80px 0px;
+  @media (max-width: $breakpoint768) {
+    padding: 10px 0px 60px 0px;
+  }
+}
+
+.founder__title {
+  font-family: $fontSecondary;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+  text-align: center;
+}
+
+.founder__text {
+  font-family: $fontSecondary;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #727272;
+
+  span {
+    color: #657fff;
+  }
+}
+.founder__text-down {
+  font-family: $fontSecondary;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #727272;
+  span {
+    color: #657fff;
+  }
+
+  @media (max-width: $breakpoint768) {
+    display: none;
+  }
+}
+.founder {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &__background {
+    @media (max-width: $breakpoint768) {
+      object-fit: cover;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.founder__player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 27px;
+  background-color: #a29287;
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:hover,
+  :focus {
+    background-color: #6e645c;
+  }
+}
+
+// ************************ Модальное окно ************************ //
+// mf
+.modal__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  display: none;
+
+  .modal {
+    &__title {
+      text-align: center;
+    }
+
+    &__close {
+      path {
+        fill: white;
+      }
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      width: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: $breakpoint768) {
+        top: 20px;
+        right: 20px;
+      }
+    }
+  }
+}
+.founder__iframe {
+  @media (max-width: $breakpoint768) {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+}

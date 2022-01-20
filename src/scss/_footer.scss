@@ -1,0 +1,212 @@
+// Footer
+.section {
+  // .section__footer
+  &__footer {
+    display: block;
+    background-color: #1e162d;
+    padding: 46px 0px 30px 0px;
+    @media (max-width: $breakpoint992) {
+      padding: 50px 0px 30px 0px;
+    }
+    @media (max-width: $breakpoint768) {
+      padding: 53px 0px 40px 0px;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media (max-width: $breakpoint768) {
+    display: block;
+  }
+  // .footer__item
+  &__item {
+    &:nth-child(2) {
+      display: flex;
+      gap: 100px;
+      @media (max-width: $breakpoint880) {
+        gap: 50px;
+      }
+      @media (max-width: $breakpoint768) {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+      }
+    }
+  }
+  // .footer__item-icon
+  &__item-icon {
+    display: flex;
+    margin-bottom: 45px;
+    @media (max-width: $breakpoint992) {
+      margin-bottom: 41px;
+    }
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 54px;
+    }
+
+    img {
+      max-width: 236px;
+    }
+  }
+  // .footer__item-text
+  &__item-text {
+    font-family: $fontMain;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 14px;
+    @media (max-width: $breakpoint768) {
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 18px;
+    }
+  }
+  // .footer__item-links
+  &__item-links {
+    display: flex;
+    gap: 10px;
+    @media (max-width: $breakpoint768) {
+      gap: 20px;
+    }
+    @media (max-width: $breakpoint415) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    a {
+      img {
+        max-width: 115px;
+        @media (max-width: $breakpoint768) {
+          min-width: 168px;
+        }
+      }
+    }
+  }
+  // .footer__list
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  // .footer__list-item
+  &__list-item {
+    &--link {
+      font-family: $fontMain;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+      &:hover,
+      :focus {
+        color: #737185;
+      }
+      @media (max-width: $breakpoint768) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+    &--mail {
+      color: #737185;
+      &:hover,
+      :focus {
+        color: #2f4de2;
+      }
+    }
+  }
+  // .footer__copyright
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+    @media (max-width: $breakpoint768) {
+      display: block;
+      margin-top: 40px;
+    }
+  }
+}
+.first {
+  font-family: $fontMain;
+  font-weight: bold;
+  font-size: 18px;
+  color: #2f4de2;
+  margin-bottom: 4px;
+  @media (max-width: $breakpoint768) {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+// .link {
+//   color: #2f4de2;
+//   @media (max-width: $breakpoint768) {
+//     color: #ffffff;
+//   }
+// }
+.copyright {
+  // .copyright__text
+  &__text {
+    font-family: $fontMain;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #737185;
+    @media (max-width: $breakpoint768) {
+      font-size: 16px;
+      line-height: 21px;
+    }
+    span {
+      font-weight: 600;
+      color: #2f4de2;
+      @media (max-width: $breakpoint768) {
+        font-weight: 600;
+      }
+    }
+  }
+  // .copyright__links
+  &__links {
+    display: flex;
+    gap: 28px;
+    @media (max-width: $breakpoint768) {
+      gap: 30px;
+      margin-top: 20px;
+    }
+    a {
+      display: flex;
+      img {
+        max-width: 18px;
+        &:hover,
+        :focus {
+          transform: scale(150%);
+        }
+        @media (max-width: $breakpoint768) {
+          max-width: 24px;
+        }
+      }
+    }
+  }
+  // .copyright__list-item
+  &__list-item {
+  }
+}
+.footer__links-up {
+  @media (max-width: $breakpoint768) {
+    display: none;
+  }
+}
+.footer__links-down {
+  display: none;
+  @media (max-width: $breakpoint768) {
+    display: block;
+    margin-top: 60px;
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.section {
+  &__application {
+    padding-top: 280px;
+    background: #fafafa;
+    overflow: hidden;
+    @media (max-width: $breakpoint992) {
+      padding-top: 200px;
+    }
+    @media (max-width: $breakpoint768) {
+      padding-top: 540px;
+    }
+    @media (max-width: $breakpoint480) {
+      padding-top: 300px;
+    }
+  }
+}
+
+.application {
+  // .application__content
+  &__content {
+    z-index: 2;
+    background-color: #2f4de2;
+    border-radius: 30px;
+    padding: 46px 0px 40px 40px;
+    @media (max-width: $breakpoint768) {
+      padding: 30px 30px 30px 30px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  // .application__links
+  &__links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 36px;
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 0px;
+      gap: 10px;
+    }
+    @media (max-width: $breakpoint480) {
+      flex-direction: column;
+    }
+  }
+  // .application__link
+  &__link {
+    display: flex;
+  }
+  // .application__title
+  &__title {
+    max-width: 450px;
+    font-family: $fontMain;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 114%;
+    text-transform: capitalize;
+    color: #ffffff;
+    @media (max-width: $breakpoint880) {
+      font-size: 32px;
+      line-height: 118%;
+      max-width: 400px;
+    }
+    @media (max-width: $breakpoint768) {
+      font-size: 30px;
+      line-height: 118%;
+      max-width: 100%;
+      margin-bottom: 35px;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 25px;
+      line-height: 114%;
+    }
+  }
+}
+.image-iphone {
+  position: absolute;
+  right: 80px;
+  max-width: 303px;
+  top: -225px;
+  height: auto;
+  @media (max-width: $breakpoint992) {
+    max-width: 262px;
+    top: -130px;
+  }
+  @media (max-width: $breakpoint880) {
+    max-width: 252px;
+    right: 30px;
+  }
+  @media (max-width: $breakpoint768) {
+    z-index: 1;
+
+    max-width: 380px;
+    top: -430px;
+
+    right: 50%;
+    transform: translate(50%) !important;
+  }
+  @media (max-width: $breakpoint480) {
+    max-width: 240px;
+    top: -250px;
+  }
+}
+
+.application__wrapper {
+  position: relative;
+  background-color: #2f4de2;
+  border-radius: 30px;
+  // padding: 46px 0px 40px 40px;
+  @media (max-width: $breakpoint768) {
+    // padding: 30px 30px 30px 30px;
+    display: flex;
+    // flex-direction: column-reverse;
+  }
+}

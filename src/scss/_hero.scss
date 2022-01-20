@@ -1,0 +1,178 @@
+.section__hero {
+  overflow: hidden;
+  background: #fafafa;
+  position: relative;
+}
+.hero {
+  @media (max-width: $breakpoint1200) {
+    padding: 140px 0px 240px 0px;
+  }
+  @media (max-width: $breakpoint992) {
+    padding: 120px 0px 200px 0px;
+  }
+  @media (max-width: $breakpoint768) {
+    padding: 80px 0px 300px 0px;
+  }
+
+  display: flex;
+  padding: 199px 0px 240px 0px;
+}
+
+.hero__img {
+  // @media screen and(max-width: $breakpoint1500) {
+  // 	max-width: 800px;
+  // }
+  top: 38px;
+  max-width: 900px;
+  position: absolute;
+  right: -365px;
+  bottom: 50px;
+  height: auto;
+  @media (max-width: $breakpoint1200) {
+    max-width: 775px;
+    right: -280px;
+    top: 38px;
+  }
+  @media (max-width: $breakpoint992) {
+    max-width: 670px;
+    right: -215px;
+    top: 38px;
+  }
+  @media (max-width: $breakpoint880) {
+    max-width: 600px;
+    right: -215px;
+    top: 38px;
+  }
+  @media (max-width: $breakpoint768) {
+    max-width: 600px;
+    right: -205px;
+    height: auto;
+    // position: static;
+    // position: absolute;
+    // bottom: 30px;
+    right: -50px;
+    max-width: 370px;
+    width: 100%;
+    height: auto;
+    top: 55%;
+  }
+}
+.hero__item {
+  display: flex;
+  flex: 0 0 55%;
+  &:nth-child(2) {
+    flex: 0 0 45%;
+  }
+  flex-direction: column;
+  @media (max-width: $breakpoint768) {
+    flex: 0 0 100%;
+  }
+}
+.hero__title {
+  @media screen and (max-width: $breakpoint1200) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: $breakpoint992) {
+    font-size: 40px;
+  }
+  @media (max-width: $breakpoint880) {
+    font-size: 30px;
+  }
+
+  font-family: $fontSecondary;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 100%;
+  color: #252241;
+
+  margin-bottom: 18px;
+
+  &__blue {
+    color: #2f4de2;
+  }
+}
+
+.hero__icon-bank {
+  margin-left: 20px;
+  margin-top: 8px;
+  @media screen and (max-width: $breakpoint1200) {
+    width: 38px;
+    margin-top: 5px;
+  }
+  @media screen and (max-width: $breakpoint992) {
+    width: 29px;
+    margin-left: 15px;
+  }
+  @media screen and (max-width: $breakpoint880) {
+    width: 23px;
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+}
+
+.hero__title__text {
+  font-family: Brutal Type;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #737185;
+
+  margin-bottom: 40px;
+}
+
+.hero__btn {
+  max-width: 160px;
+  font-family: $fontMain;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #2f4de2;
+  &:hover,
+  :focus {
+    background-color: #1c3bd6;
+  }
+}
+.hero__btn__img {
+  margin-left: 12px;
+}
+
+.hero__support {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  right: 126px;
+  bottom: 30px;
+  @media (max-width: $breakpoint768) {
+    display: none;
+  }
+}
+
+.hero__support-content {
+  text-align: end;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 1px;
+    background-color: #111;
+    left: -56px;
+    top: 18px;
+  }
+}
+.hero__support-text {
+  text-transform: uppercase;
+  font-family: $fontMain;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1e162d;
+}
+.hero__support-time {
+  font-family: $fontMain;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #737185;
+}

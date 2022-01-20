@@ -1,0 +1,134 @@
+.section__benefits {
+	padding: 50px 0px;
+}
+.benefits__title {
+	font-family: $fontSecondary;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 39px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+.benefits__text {
+	font-family: $fontMain;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 140%;
+	color: #727272;
+	margin-bottom: 19px;
+}
+.benefits__list {
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 40px;
+	padding: 30px 0px;
+
+	@media (max-width: $breakpoint768) {
+		flex-direction: column;
+		row-gap: 20px;
+	}
+}
+.benefits__item {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex: 0 0 48%;
+	align-items: center;
+	justify-content: space-between;
+
+	background: #fafafa;
+	border: 1px solid #f2f2f2;
+	border-radius: 10px;
+	padding: 20px 40px 20px 20px;
+	@media (max-width: $breakpoint768) {
+		padding: 20px;
+	}
+	@media (max-width: $breakpoint992) {
+		&:nth-child(3) {
+			.benefits__item-img {
+				height: 50px;
+			}
+		}
+	}
+
+	&:hover {
+		.benefits__item-hover {
+			top: 0;
+			transition: 0.3s all linear;
+			opacity: 1;
+		}
+	}
+
+	&-img {
+		@media (max-width: $breakpoint992) {
+			height: 60px;
+		}
+		@media (max-width: $breakpoint768) {
+			height: 70px;
+		}
+	}
+}
+.benefits__item-title {
+	font-family: $fontSecondary;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 100%;
+	color: #000000;
+	margin-bottom: 57px;
+	span {
+		display: block;
+		color: #2f4de2;
+		font-weight: bold;
+	}
+	@media (max-width: $breakpoint992) {
+		font-size: 22px;
+	}
+	@media (max-width: $breakpoint768) {
+		font-size: 24px;
+		margin-bottom: 43px;
+	}
+}
+.benefits__item-arrow {
+	background: #f2f2f2;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+//item-hover-focus
+.benefits__item-hover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 100%;
+	opacity: 0;
+
+	background-color: #2f4de2;
+	padding: 25px;
+
+	h4 {
+		font-family: $fontSecondary;
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 18px;
+		color: #ffffff;
+		margin-bottom: 15px;
+		@media (max-width: $breakpoint768) {
+			font-size: 20px;
+			line-height: 14px;
+			margin-bottom: 11px;
+		}
+	}
+	p {
+		font-family: $fontMain;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 18px;
+		color: #ffffff;
+		@media (max-width: $breakpoint768) {
+			font-size: 14px;
+			line-height: 14px;
+		}
+	}
+}

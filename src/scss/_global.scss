@@ -1,0 +1,66 @@
+// Container
+.container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint1400) {
+    max-width: 1100px;
+    padding: 0 $containerSidePadding + px;
+  }
+
+  @media (max-width: $breakpoint992) {
+    max-width: 970px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    max-width: 750px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    max-width: none;
+  }
+}
+
+// Body Locked
+body {
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn {
+  background: #2f4de2;
+  box-shadow: 0px 2px 32px rgba(47, 77, 226, 0.15),
+    0px 1px 6px rgba(47, 77, 226, 0.09);
+  border-radius: 30px;
+  padding: 8px 20px;
+}
+
+.coding__by {
+  z-index: 99;
+  display: inline-flex;
+  position: fixed;
+  top: 100%;
+  margin-top: -20px;
+  right: 0;
+  background-color: #8a8a94;
+  padding: 4px;
+  border-radius: 4px;
+  opacity: 70%;
+  p {
+    font-size: 12px;
+  }
+}
